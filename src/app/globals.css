@@ -1,26 +1,174 @@
-/* Fade-in animation */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 0.8s ease-out forwards;
+@import "tailwindcss";
+
+/* ----------------------------------------------
+   SYNEXIL CORPORATE THEME — TAILWIND v4
+---------------------------------------------- */
+
+@theme {
+  --color-synexil-blue: #0078D4;
+  --color-synexil-green: #4CAF50;
+  --color-synexil-teal: #00A3A3;
+  --color-synexil-aqua: #2DD4BF;
+
+  --color-synexil-dark: #1F2937;
+  --color-synexil-grey: #6B7280;
+  --color-synexil-light: #F3F4F6;
+  --color-synexil-white: #FFFFFF;
+
+  --font-sans: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  --bg-synexil-gradient: linear-gradient(90deg, #0078D4, #00A3A3, #4CAF50);
+}
+
+/* ----------------------------------------------
+   GLOBAL BASE STYLES
+---------------------------------------------- */
+
+html {
+  font-family: var(--font-sans);
+  scroll-behavior: smooth;
+}
+
+section {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+/* ----------------------------------------------
+   BUTTONS
+---------------------------------------------- */
+
+.btn-primary {
+  background-color: var(--color-synexil-green);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #3e8e41;
+}
+
+.btn-outline {
+  border: 2px solid var(--color-synexil-blue);
+  color: var(--color-synexil-blue);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-outline:hover {
+  background-color: var(--color-synexil-blue);
+  color: white;
+}
+
+/* ----------------------------------------------
+   CARDS
+---------------------------------------------- */
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  padding: 1.5rem; /* improved mobile spacing */
+  border: 1px solid var(--color-synexil-light);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* ----------------------------------------------
+   GRADIENT UTILITY
+---------------------------------------------- */
+
+.synexil-gradient {
+  background: var(--bg-synexil-gradient);
+  color: white;
+}
+
+/* ----------------------------------------------
+   SYNEXIL ANIMATIONS — SUBTLE, PROFESSIONAL
+---------------------------------------------- */
+
+@layer utilities {
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 0.8s ease forwards;
+  }
+
+  .fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+  }
+
+  .fade-in-delay {
+    opacity: 0;
+    animation: fadeIn 1.2s ease forwards;
+  }
+
+  .fade-in-up-delay {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1.2s ease forwards;
+  }
+
+  .hover-rise {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-rise:hover {
+    transform: translateY(-4px);
+  }
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
+  to {
+    opacity: 1;
+  }
 }
 
-/* Fade-in delayed (for staggered elements) */
-.fade-in-delay {
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----------------------------------------------
+   PAGE TRANSITIONS — SYNEXIL SMOOTH FADE
+---------------------------------------------- */
+
+.page-transition {
   opacity: 0;
-  animation: fadeIn 1.2s ease-out forwards;
+  animation: pageFade 0.5s ease forwards;
 }
 
-/* Hover lift effect */
-.hover-lift {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+@keyframes pageFade {
+  to {
+    opacity: 1;
+  }
 }
 
-.hover-lift:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+/* ----------------------------------------------
+   SCROLL REVEAL — SYNEXIL PREMIUM ANIMATION
+---------------------------------------------- */
+
+@layer utilities {
+  .reveal {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }

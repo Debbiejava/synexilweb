@@ -1,0 +1,78 @@
+"use client";
+
+import Link from "next/link";
+import { useState } from "react";
+import Image from "next/image";
+
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <nav className="w-full bg-synexil-blue text-white shadow-md">
+      <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        
+        {/* LOGO */}
+        <Link href="/" className="flex items-center gap-3">
+  <Image
+    src="/logo.png"
+    alt="Synexil logo"
+    width={140}
+    height={40}
+    priority
+  />
+</Link>
+
+
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex items-center gap-8 text-sm font-medium">
+          <Link href="/" className="hover:text-synexil-aqua transition">Home</Link>
+          <Link href="/about" className="hover:text-synexil-aqua transition">About</Link>
+          <Link href="/contact" className="hover:text-synexil-aqua transition">Contact</Link>
+
+          {/* SERVICES DROPDOWN */}
+          <div className="relative group">
+            <button className="hover:text-synexil-aqua transition">
+              Services
+            </button>
+
+            <div className="absolute hidden group-hover:block bg-white text-synexil-dark shadow-lg rounded-lg mt-3 w-56 border border-synexil-light">
+              <Link href="/services/purview" className="block px-4 py-3 hover:bg-synexil-light">Microsoft Purview</Link>
+              <Link href="/services/defender" className="block px-4 py-3 hover:bg-synexil-light">Microsoft Defender</Link>
+              <Link href="/services/m365-management" className="block px-4 py-3 hover:bg-synexil-light">M365 Management</Link>
+              <Link href="/services/training" className="block px-4 py-3 hover:bg-synexil-light">Training</Link>
+              <Link href="/services/product-development" className="block px-4 py-3 hover:bg-synexil-light">Product Development</Link>
+            </div>
+          </div>
+        </div>
+
+        {/* MOBILE MENU BUTTON */}
+        <button
+          className="md:hidden text-white"
+          onClick={() => setOpen(!open)}
+        >
+          <span className="text-3xl">&#9776;</span>
+        </button>
+      </div>
+
+      {/* MOBILE MENU */}
+      {open && (
+  <div className="md:hidden bg-synexil-blue text-white px-6 pb-6 space-y-4 text-base font-medium">
+    <Link href="/" className="block py-2">Home</Link>
+    <Link href="/about" className="block py-2">About</Link>
+    <Link href="/contact" className="block py-2">Contact</Link>
+
+    <div className="pt-4 border-t border-white/20">
+      <p className="font-semibold mb-2">Services</p>
+      <Link href="/services/purview" className="block py-2">Microsoft Purview</Link>
+      <Link href="/services/defender" className="block py-2">Microsoft Defender</Link>
+      <Link href="/services/m365-management" className="block py-2">M365 Management</Link>
+      <Link href="/services/training" className="block py-2">Training</Link>
+      <Link href="/services/product-development" className="block py-2">Product Development</Link>
+    </div>
+  </div>
+)}
+
+    </nav>
+  );
+}
