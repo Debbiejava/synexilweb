@@ -16,8 +16,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="Synexil logo"
-            width={180}   // Increased from 140 → 180
-            height={60}   // Increased from 40 → 60
+            width={280}   // Increased from 140 → 280
+            height={160}   // Increased from 40 → 160
             priority
           />
         </Link>
