@@ -18,7 +18,8 @@ export default function M365ManagementPage() {
       <ServiceHero
         title="Microsoft 365 Management"
         subtitle="Centralised management for users, devices, apps, and Zero Trust policies."
-        icon={Cog6ToothIcon}
+        icon={<Cog6ToothIcon className="h-16 w-16 text-white" />}
+
       />
 
       <ServiceFeatureList

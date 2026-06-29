@@ -18,7 +18,7 @@ export default function ProductDevelopmentPage() {
       <ServiceHero
         title="Product Development"
         subtitle="We build intelligent, secure, and scalable applications tailored to your organisation."
-        icon={CubeTransparentIcon}
+        icon={<CubeTransparentIcon className="h-16 w-16 text-white" />}
       />
 
       <ServiceFeatureList

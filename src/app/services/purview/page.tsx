@@ -18,7 +18,8 @@ export default function PurviewPage() {
       <ServiceHero
         title="Microsoft Purview"
         subtitle="Unified data governance, compliance, and protection."
-        icon={DocumentMagnifyingGlassIcon}
+        icon={<DocumentMagnifyingGlassIcon className="h-16 w-16 text-white" />}
+
       />
 
       <ServiceFeatureList

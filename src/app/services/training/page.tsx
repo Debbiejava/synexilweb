@@ -18,7 +18,7 @@ export default function TrainingPage() {
       <ServiceHero
         title="Training & Upskilling"
         subtitle="Upskill your team with practical, real‑world Microsoft security and governance training."
-        icon={AcademicCapIcon}
+        icon={<AcademicCapIcon className="h-16 w-16 text-white" />}
       />
 
       <ServiceFeatureList

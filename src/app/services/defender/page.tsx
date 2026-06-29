@@ -18,7 +18,8 @@ export default function DefenderPage() {
       <ServiceHero
         title="Microsoft Defender"
         subtitle="Unified security operations powered by Microsoft Defender XDR."
-        icon={ShieldCheckIcon}
+        icon={<ShieldCheckIcon className="h-16 w-16 text-white" />}
+
       />
 
       <ServiceFeatureList
