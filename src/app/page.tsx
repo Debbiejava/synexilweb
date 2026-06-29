@@ -11,7 +11,13 @@ export default function Home() {
       <ServicesOverview />
       <WhySynexil />
       <AboutPreview />
-      <CTASection />
+      <CTASection
+  title="Ready to elevate your organisation?"
+  text="Synexil delivers secure, compliant, and intelligent solutions built on Microsoft’s cloud ecosystem."
+  buttonText="Contact Synexil"
+  href="/contact"
+/>
+
     </>
   );
 }
