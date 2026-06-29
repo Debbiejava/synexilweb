@@ -1,5 +1,7 @@
+"use client";
+
 import React from "react";
-import { ShieldCheck, Lightbulb, Cog6Tooth, AcademicCap } from "@heroicons/react/24/outline";
+import { ShieldCheckIcon, LightBulbIcon, Cog6ToothIcon, AcademicCapIcon } from "@heroicons/react/24/outline";
 
 export default function WhySynexil() {
   const items = [
@@ -7,25 +9,25 @@ export default function WhySynexil() {
       title: "Ethical Innovation",
       description:
         "We build solutions that prioritize transparency, compliance, and responsible technology adoption.",
-      icon: Lightbulb,
+      icon: LightBulbIcon,
     },
     {
       title: "Enterprise‑Grade Security",
       description:
         "Our Microsoft Defender and Purview expertise ensures your data, identities, and infrastructure remain protected.",
-      icon: ShieldCheck,
+      icon: ShieldCheckIcon,
     },
     {
       title: "Automation & Modernization",
       description:
         "We develop intelligent applications that streamline workflows, reduce manual effort, and improve operational efficiency.",
-      icon: Cog6Tooth,
+      icon: Cog6ToothIcon,
     },
     {
       title: "Certified Expertise",
       description:
         "With advanced Microsoft certifications and hands‑on industry experience, we deliver solutions you can trust.",
-      icon: AcademicCap,
+      icon: AcademicCapIcon,
     },
   ];
 
