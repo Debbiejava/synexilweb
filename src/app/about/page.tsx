@@ -17,7 +17,7 @@ export default function AboutPage() {
       <ServiceHero
         title="About Synexil"
         subtitle="Building a safer, smarter digital future for organisations across the world."
-        icon={GlobeAltIcon}
+        icon={<GlobeAltIcon />}
       />
 
       {/* ABOUT PREVIEW */}

@@ -17,7 +17,7 @@ export default function ContactPage() {
       <ServiceHero
         title="Contact Synexil"
         subtitle="We’re here to support your security, governance, and innovation goals."
-        icon={EnvelopeIcon}
+        icon={<EnvelopeIcon />}
       />
 
       <section className="py-20 bg-white">
