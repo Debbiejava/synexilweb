@@ -35,7 +35,7 @@ export default function Footer() {
             </Link>
 
             {/* Email */}
-            <Link href="mailto:contact@synexil.com" className="hover:text-synexil-blue transition">
+            <Link href="mailto:support@synexil.com" className="hover:text-synexil-blue transition">
               <EnvelopeIcon className="h-6 w-6" />
             </Link>
           </div>
