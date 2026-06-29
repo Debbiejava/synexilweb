@@ -3,7 +3,7 @@ import { EnvelopeIcon } from "@heroicons/react/24/outline";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-white text-synexil-dark border-t border-synexil-light shadow-sm">
+    <footer className="w-full bg-[#E8F3FF] text-synexil-dark border-t border-synexil-light shadow-sm">
       <div className="max-w-7xl mx-auto px-6 py-3">
 
         {/* TOP ROW */}
