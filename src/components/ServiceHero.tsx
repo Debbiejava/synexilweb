@@ -3,7 +3,7 @@
 
 import useReveal from "@/hooks/useReveal";
 
-export default function ServiceHero({ title, subtitle, icon: Icon }) {
+export default function ServiceHero({ title, subtitle, icon: Icon }: { title: string; subtitle: string; icon: React.ComponentType<React.SVGProps<SVGSVGElement>> }) {
   const ref = useReveal();
 
   return (

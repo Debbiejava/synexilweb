@@ -1,12 +1,17 @@
 "use client";
 
 import useReveal from "@/hooks/useReveal";
+import { ReactNode } from "react";
 
-export default function ServiceFeatureList({ features }) {
+export default function ServiceFeatureList({
+  features,
+}: {
+  features: string[];
+}) {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-5xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10">
-        {features.map((feature, index) => {
+        {features.map((feature: string, index: number) => {
           const ref = useReveal();
           return (
             <div
