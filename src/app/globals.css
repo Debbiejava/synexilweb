@@ -4,7 +4,7 @@
    SYNEXIL CORPORATE THEME — TAILWIND v4
 ---------------------------------------------- */
 
-@theme {
+:root {
   --color-synexil-blue: #0078D4;
   --color-synexil-green: #4CAF50;
   --color-synexil-teal: #00A3A3;
