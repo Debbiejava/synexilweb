@@ -15,18 +15,18 @@ export default function Hero() {
             Governance, Security, Automation, and Training for Modern Enterprises.
           </p>
 
-          <div className="bg-synexil-green text-white px-6 py-3 rounded-lg">
+          {/* Button Group */}
+          <div className="mt-8 flex gap-4">
             <a
               href="/services"
               className="bg-synexil-green text-black px-6 py-3 rounded-lg font-semibold shadow-md hover:bg-green-600 transition"
-
             >
               Explore Services
             </a>
 
             <a
               href="/contact"
-              className="border border-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-synexil-blue transition"
+              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-synexil-blue transition"
             >
               Contact Us
             </a>
