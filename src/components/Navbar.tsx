@@ -40,6 +40,7 @@ export default function Navbar() {
               <Link href="/services/m365-management" className="block px-4 py-3 hover:bg-synexil-light">M365 Management</Link>
               <Link href="/services/training" className="block px-4 py-3 hover:bg-synexil-light">Training</Link>
               <Link href="/services/product-development" className="block px-4 py-3 hover:bg-synexil-light">Product Development</Link>
+              <Link href="/services/ai-adoption" className="block px-4 py-3 hover:bg-synexil-light">AI Adoption</Link>
             </div>
           </div>
         </div>
@@ -67,6 +68,7 @@ export default function Navbar() {
             <Link href="/services/m365-management" className="block py-2">M365 Management</Link>
             <Link href="/services/training" className="block py-2">Training</Link>
             <Link href="/services/product-development" className="block py-2">Product Development</Link>
+            <Link href="/services/ai-adoption" className="block py-2">AI Adoption</Link>
           </div>
         </div>
       )}

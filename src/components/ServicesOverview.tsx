@@ -10,6 +10,7 @@ export default function ServicesOverview() {
     { name: "M365 Management", href: "/services/m365-management" },
     { name: "Training & Upskilling", href: "/services/training" },
     { name: "Product Development", href: "/services/product-development" },
+    { name: "AI Adoption", href: "/services/ai-adoption" },
   ];
 
   return (
