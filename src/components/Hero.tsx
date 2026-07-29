@@ -26,7 +26,7 @@ export default function Hero() {
 
             <a
               href="/contact"
-              className="border border-white text-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-synexil-blue transition"
+              className="border border-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-synexil-blue transition"
             >
               Contact Us
             </a>
